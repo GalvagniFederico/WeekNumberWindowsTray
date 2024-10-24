@@ -1,6 +1,7 @@
 # WeekNumberWindowsTray
 
 A simple Windows tray application that displays the current week number in the system tray. This project is designed to provide an at-a-glance reference for the current week, featuring a configurable user interface with options for font size, text color, and automatic system theme adaptation.
+![image](https://github.com/user-attachments/assets/7597cb82-5e20-4079-a880-ae1ff9aaaf2f)
 
 ## Features
 

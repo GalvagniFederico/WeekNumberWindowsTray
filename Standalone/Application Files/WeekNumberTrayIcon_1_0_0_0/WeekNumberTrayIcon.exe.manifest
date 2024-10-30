@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="WeekNumberTrayIcon.exe" version="1.0.0.0" publicKeyToken="0ede6d6c64b3e571" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="WeekNumberTrayIcon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="WeekNumberTrayIcon.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeekNumberTrayIcon.exe" size="21488">
+      <assemblyIdentity name="WeekNumberTrayIcon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>x5Ym7urTGekVpNE/aZ//Vrw2j2jYECBWGpOBBO+QsPE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="WeekNumberTrayIcon.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rO4mjoMPTzC1RdE+BMvf0lfywGmtOsKfE96n+SRa584=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LAPTOP-1LEP2UKM\Federico" issuerKeyHash="cd8c5e255eb8e7f2ce04682c5d868a5a32327d8f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>lxAlqtXmEnO6EF49aNzLlwTFckDA7Ka5sCBSBtG3dhc=</DigestValue></Reference></SignedInfo><SignatureValue>Al7ExJvkv7DFaqohzeEORNFFFxeVmhr58ECGAz/vzt9EIbWv++QI7Qpq/Tp7KMeYNVmTDUE93/BptR+jmbpJ9Rydg0aj4EMKUpLfuXtPffXTej8IWeklFjDHEw3sfiNuqSO/BR8YRbomBLShmR0+8399gthswwC2/3okSRIJARs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1kYlNjy+dJ7bz+VrjtxS5yauza3/1nQqlGGPNf2Zxez4qPKt9V4gGeojFss9i8ugQGR99xwQGfmUx5g3wdTgIeW46HRzGIXuMQ0ksrd/6w4tN6ZoRFtAgQ+URM9t0s4kW6NhqhuFojWeab4rxuj9HFk3nBKrkucf2IexawZ4coE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1776b7d1065220b0b9a6ecc04072c50497cbdc683d5e10ba7312e6d5aa251097" Description="" Url=""><as:assemblyIdentity name="WeekNumberTrayIcon.exe" version="1.0.0.0" publicKeyToken="0ede6d6c64b3e571" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-1LEP2UKM\Federico</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>jexapQlS6PWG/U/rnpLmHq1ayHvUu0sUICrN6lIStR8=</DigestValue></Reference></SignedInfo><SignatureValue>Y9TGtVXCIhjM0wVuEXPkWuF6eKfLDl5EunAtV19lJmTz0n0n4b1qF/1L8jtAO+IIky5Q/rO0zd8Pit8hLZXX5KoaD96mrT2/kl60zSXPhCdIvnZR+u18sgGMrjO98ljAcq2XgeE0s+1VnTyQBncfLhDrQA9eRlWUAoc68cXPgfY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1kYlNjy+dJ7bz+VrjtxS5yauza3/1nQqlGGPNf2Zxez4qPKt9V4gGeojFss9i8ugQGR99xwQGfmUx5g3wdTgIeW46HRzGIXuMQ0ksrd/6w4tN6ZoRFtAgQ+URM9t0s4kW6NhqhuFojWeab4rxuj9HFk3nBKrkucf2IexawZ4coE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQFZQPj9KptK5DA+e7i+V2aDANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAATABBAFAAVABPAFAALQAxAEwARQBQADIAVQBLAE0AXABGAGUAZABlAHIAaQBjAG8wHhcNMjQxMDMwMjMzOTAyWhcNMjUxMDMxMDUzOTAyWjA7MTkwNwYDVQQDHjAATABBAFAAVABPAFAALQAxAEwARQBQADIAVQBLAE0AXABGAGUAZABlAHIAaQBjAG8wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANZGJTY8vnSe28/la47cUucmrs2t/9Z0KpRhjzX9mcXs+KjyrfVeIBnqIxbLPYvLoEBkffccEBn5lMeYN8HU4CHluOh0cxiF7jENJLK3f+sOLTemaERbQIEPlETPbdLOJFujYaobhaI1nmm+K8bo/RxZN5wSq5LnH9iHsWsGeHKBAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAhzL+wRUynVGuHpk8bVgcRmMmq1DW7jGc4iRLwBLjsye76mW/aRuQcWhtUYnp4MVVCk3pkw+NLao0pbKKQAgeV35T8Bmei/rKg4BTFz0N//aF95ZG+TmXUtjaNC+yYSkU0qk+qh1hzVjIXPgJgnW8zpKs1qwwYpxq10gy4JR2CUc=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

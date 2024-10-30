@@ -1,0 +1,16 @@
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\obj\Debug\WeekNumberTrayIcon.vbproj.AssemblyReference.cache
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\obj\Debug\WeekNumberTrayIcon.Form1.resources
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\obj\Debug\WeekNumberTrayIcon.Resources.resources
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\obj\Debug\WeekNumberTrayIcon.vbproj.GenerateResource.cache
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\obj\Debug\WeekNumberTrayIcon.vbproj.CoreCompileInputs.cache
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\bin\Debug\WeekNumberTrayIcon.exe.config
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\bin\Debug\WeekNumberTrayIcon.exe
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\bin\Debug\WeekNumberTrayIcon.pdb
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\bin\Debug\WeekNumberTrayIcon.xml
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\obj\Debug\WeekNumberTrayIcon.exe
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\obj\Debug\WeekNumberTrayIcon.xml
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\obj\Debug\WeekNumberTrayIcon.pdb
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\bin\Debug\WeekNumberTrayIcon.exe.manifest
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\bin\Debug\WeekNumberTrayIcon.application
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\obj\Debug\WeekNumberTrayIcon.exe.manifest
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\obj\Debug\WeekNumberTrayIcon.application

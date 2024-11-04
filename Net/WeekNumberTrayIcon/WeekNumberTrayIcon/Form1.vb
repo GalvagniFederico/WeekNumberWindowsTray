@@ -113,14 +113,14 @@ Public Class Form1
         fontSizeMenuItem.DropDownItems.Add("Large", Nothing, Sub() SetFontSize(60))
         contextMenu.Items.Add(fontSizeMenuItem)
 
-        ' Text color menu
+        ' Text color menu - with images of the same color
         Dim textColorMenuItem As New ToolStripMenuItem("Text Color")
         textColorMenuItem.DropDownItems.Add("System Theme", Nothing, Sub() SetTextColor(Color.Empty, True))
-        textColorMenuItem.DropDownItems.Add("Black", Nothing, Sub() SetTextColor(Color.Black, False))
-        textColorMenuItem.DropDownItems.Add("White", Nothing, Sub() SetTextColor(Color.White, False))
-        textColorMenuItem.DropDownItems.Add("Red", Nothing, Sub() SetTextColor(Color.Red, False))
-        textColorMenuItem.DropDownItems.Add("Green", Nothing, Sub() SetTextColor(Color.Green, False))
-        textColorMenuItem.DropDownItems.Add("Blue", Nothing, Sub() SetTextColor(Color.Blue, False))
+        textColorMenuItem.DropDownItems.Add("Black", CreateColorImage(Color.Black), Sub() SetTextColor(Color.Black, False))
+        textColorMenuItem.DropDownItems.Add("White", CreateColorImage(Color.White), Sub() SetTextColor(Color.White, False))
+        textColorMenuItem.DropDownItems.Add("Yellow", CreateColorImage(Color.Yellow), Sub() SetTextColor(Color.Yellow, False))
+        textColorMenuItem.DropDownItems.Add("YellowGreen", CreateColorImage(Color.YellowGreen), Sub() SetTextColor(Color.YellowGreen, False))
+        textColorMenuItem.DropDownItems.Add("Skyblue", CreateColorImage(Color.SkyBlue), Sub() SetTextColor(Color.SkyBlue, False))
         contextMenu.Items.Add(textColorMenuItem)
 
         ' Exit menu
@@ -128,6 +128,14 @@ Public Class Form1
         contextMenu.Items.Add(exitMenuItem)
 
         Return contextMenu
+    End Function
+
+    Private Function CreateColorImage(color As Color) As Image
+        Dim bmp As New Bitmap(16, 16)
+        Using g As Graphics = Graphics.FromImage(bmp)
+            g.Clear(color)
+        End Using
+        Return bmp
     End Function
 
     Private Sub SetFontSize(size As Integer)

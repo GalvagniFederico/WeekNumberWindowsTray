@@ -1,0 +1,76 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=STRING[256]	N=clientID	G=VAR
+++D=OmronLib\MQTT_Comm\sConnectionSettings	N=connectionSettings	G=VAR
+++D=OmronLib\MQTT_Comm\sClientReference	N=clientReference	G=VAR
+++D=OmronLib\MQTT_Comm\MQTTClient	N=MQTTClient_inst	G=VAR
+++D=BOOL	N=Operating	G=VAR
+++D=BOOL	N=OperatingEnd	G=VAR
+++D=RS	N=RS_inst	G=VAR
+++D=BOOL	N=ClientStop	G=VAR
+++D=BOOL	N=Execute_pub	G=VAR
+++D=UINT	N=PacketID	G=VAR
+++D=USINT	N=MsgType	G=VAR
+++D=string[1986]	N=pubMsg	G=VAR
+++D=OmronLib\MQTT_Comm\sPubFlags	N=pubFlags	G=VAR
+++D=STRING[1986]	N=rcvMsg	G=VAR
+++D=OmronLib\MQTT_Comm\MQTTSubString	N=MQTTSubString_inst	G=VAR
+++D=OmronLib\MQTT_Comm\MQTTPubString	N=MQTTPubString_inst	G=VAR
+++D=STRING[512]	N=SubTopic	G=VAR
+++D=BOOL	N=MQTTClient_error	G=VAR
+++D=WORD	N=MQTTClient_errorID	G=VAR
+++D=BOOL	N=MQTTSubString_Error	G=VAR
+++D=WORD	N=MQTTSubString_ErrorID	G=VAR
+++D=BOOL	N=MQTT_SubString_received	G=VAR
+++D=UINT	N=receiveIndex	G=VAR
+++D=BOOL	N=MQTTPub_Error	G=VAR
+++D=WORD	N=MQTTPub_ErrorID	G=VAR
+++D=DWORD	N=MQTTPub_ErrorIDEx	G=VAR
+++D=STRING[1980]	N=msgJson	G=VAR
+++D=BOOL	N=TimeSyncRequired	G=VAR
+++D=TON	N=TON_Reset_TimeSyncRequirment	G=VAR
+++D=BOOL	N=TimeSyncDone	G=VAR
+++D=BOOL	N=TimeSyncTonEnable	G=VAR
+++D=OmronLib\MQTT_Comm\MQTTPubString	N=MQTTPubString_inst_timeSync	G=VAR
+++D=BOOL	N=send_tsReq	G=VAR	Com=Send time synch request
+++D=STRING[1986]	N=rcvTime	G=VAR
+++D=STRING[1986]	N=timeRequest	G=VAR
+++D=OmronLib\MQTT_Comm\MQTTSubString	N=MQTTSubString_inst_timeSynch	G=VAR
+++D=UINT	N=Stage	G=VAR
+++D=DATE_AND_TIME	N=newDateTime	G=VAR
+++D=BOOL	N=TimeSyncFailed	G=VAR
+++D=BOOL	N=receive_time	G=VAR
+++D=SINT	N=IndexToSend	G=VAR
+++D=BOOL	N=manOp	G=VAR
+++D=BOOL	N=_fi	G=VAR
+++D=SINT	N=indiceControlloTimeout	G=VAR
+++D=LINT	N=CurrentEpoch	G=VAR
+++D=TON	N=OperatingChangeDelay	G=VAR
+++D=BOOL	N=timeout	G=VAR
+++D=BOOL	N=FORCE	G=VAR
+++D=DWORD	N=MQTTSubString_ErrorIDEx	G=VAR
+++D=BOOL	N=Connected	G=VAR
+++D=TON	N=TON_DelayConnection	G=VAR
+++D=TON	N=OperatingEndDelay	G=VAR
+++D=TOF	N=OperatingEndDelay_OFF	G=VAR
+++D=AccumulationTimer	N=lElapsedTime	G=VAR
+++D=TIME	N=ElpasedTime	G=VAR
+++D=UINT	N=incrementalID	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=iEnable	Ord=0	G=VAR_INPUT
+++D=BOOL	N=oEnable	Ord=1	G=VAR_OUTPUT
+++D=STRING[8]	N=MQTT_ClientID	Ord=2	G=VAR_INPUT
+++D=ARRAY[*] OF MQTT_Message	N=MessageStack	Ord=3	G=VAR_IN_OUT
+++D=STRING[16]	N=IpAdress	Ord=4	G=VAR_INPUT
+++D=UINT	N=PortNO	Ord=5	G=VAR_INPUT
+++D=ARRAY[*] OF SINT	N=IndexStack	Ord=6	G=VAR_IN_OUT	Com=Stack degli indici
+++D=BOOL	N=Error	Ord=7	G=VAR_OUTPUT
+++D=INT	N=ErrorCode	Ord=8	G=VAR_OUTPUT
+++D=UINT	N=IndexOfIndexStack	Ord=9	G=VAR_IN_OUT	Com=Indice dello stack degli indici
+++D=STRING[64]	N=PublishTopic	Ord=10	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=_EIP_EtnOnlineSta	Const=1	G=VAR_EXTERNAL
+++D=TIME	N=ElapsedTime	G=VAR_EXTERNAL
+++D=BOOL	N=gTIME_SYNCHRONIZED	G=VAR_EXTERNAL
+++D=LINT	N=gTIME_Milliseconds	G=VAR_EXTERNAL

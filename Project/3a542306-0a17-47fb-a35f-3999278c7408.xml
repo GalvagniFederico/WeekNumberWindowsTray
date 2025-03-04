@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>JSONEncoding</Name>
+      <NameSpace></NameSpace>
+      <Version>0.0.57</Version>
+      <Revision>1</Revision>
+      <LibraryId>29c3c57d-4d26-4adb-a5fb-193d24719ab3</LibraryId>
+      <Author>SGG</Author>
+      <Company>OMRON ATCE</Company>
+      <DateCreated>2016-09-19T14:42:18.866015+02:00</DateCreated>
+      <DateModified>2020-04-20T14:27:56.3308353+02:00</DateModified>
+      <Comment></Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>JSON\JSON_INT</PublicName>
+        <PublicName>JSON\JSON_DINT</PublicName>
+        <PublicName>JSON\JSON_LINT</PublicName>
+        <PublicName>JSON\JSON_UINT</PublicName>
+        <PublicName>JSON\JSON_UDINT</PublicName>
+        <PublicName>JSON\JSON_ULINT</PublicName>
+        <PublicName>JSON\JSON_STRING</PublicName>
+        <PublicName>JSON\JSON_BOOL</PublicName>
+        <PublicName>JSON\JSON_LOGIC</PublicName>
+        <PublicName>JSON\JSON_DATE</PublicName>
+        <PublicName>JSON\JSON_REAL</PublicName>
+        <PublicName>JSON\JSON_LREAL</PublicName>
+        <PublicName>JSON\JSON_formatREAL</PublicName>
+        <PublicName>JSON\JSON_formatLREAL</PublicName>
+        <PublicName>JSON\JSONObj</PublicName>
+        <PublicName>JSON\JSONCloseObj</PublicName>
+        <PublicName>JSON\JSONList</PublicName>
+        <PublicName>JSON\JSONAdd</PublicName>
+        <PublicName>JSON\JSONCloseList</PublicName>
+        <PublicName>JSON\JSONArr</PublicName>
+        <PublicName>JSON\JSONCloseArr</PublicName>
+        <PublicName>JSON\JSONBuild</PublicName>
+        <PublicName>JSON\JSONBuildAsArray</PublicName>
+        <PublicName>JSON\JSONGetStatus</PublicName>
+        <PublicName>JSON\JSONBuffer</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames>
+        <InternalName>JSON\InsertVariable</InternalName>
+        <InternalName>JSON\FindReplace</InternalName>
+        <InternalName>JSON\JSON_WORD</InternalName>
+        <InternalName>JSON\JSON_DWORD</InternalName>
+        <InternalName>JSON\JSON_LWORD</InternalName>
+        <InternalName>JSON\JSONEncoder</InternalName>
+      </InternalPartsNames>
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NJ501-1500</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>18</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.18</DisplayVersion>
+        <Packages>
+          <Package Name="Motion" Version="1.18" />
+          <Package Name="OPCUA" Version="1.18" />
+        </Packages>
+      </BuildDevice>
+      <DependencyId>8173faf6-9ba0-46aa-adad-c9097bc8c63f</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\Users\Federico\Documents\FEDERICO\Software\PLC\OMRON\MQTTs\JSON Encoding and Decoding Library\JSONEncoding.slr</LibraryFilePath>
+      <LibraryFileRelativePath>Documents\FEDERICO\Software\PLC\OMRON\MQTTs\JSON Encoding and Decoding Library\JSONEncoding.slr</LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+      <AsOldVer>false</AsOldVer>
+      <SchemaVersion>3</SchemaVersion>
+      <Parameter1>false</Parameter1>
+    </LibraryModel>
+  </data>
+</data>

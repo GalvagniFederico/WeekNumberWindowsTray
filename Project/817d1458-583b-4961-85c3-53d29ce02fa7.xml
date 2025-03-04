@@ -1,0 +1,25 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>messageStacked:=FALSE;&#xD;
+IF NOT gTIME_SYNCHRONIZED THEN&#xD;
+	CF_InsertMessageStack:=FALSE;&#xD;
+	RETURN;&#xD;
+END_IF;&#xD;
+	&#xD;
+&#xD;
+FOR i:=0 TO UINT_TO_SINT(SizeOfAry(MessageStack)-1) BY 1 DO &#xD;
+	IF MessageStack[i].Status = BYTE#0 THEN&#xD;
+		MessageStack[i].Msg:=Message;&#xD;
+		MessageStack[i].CreationDate:=CONCAT(LINT_TO_STRING(DtToSec(GetTime())),'.',LINT_TO_STRING(gTIME_Milliseconds));&#xD;
+		MessageStack[i].Status := BYTE#01;&#xD;
+		MessageStack[i].Category:=Category;&#xD;
+		messageStacked:=TRUE;&#xD;
+		EXIT;&#xD;
+	END_IF;&#xD;
+END_FOR;&#xD;
+&#xD;
+&#xD;
+IF messageStacked THEN&#xD;
+	StackPush(In:=i, InOut:=IndexStack[0], Size:=SizeOfAry(IndexStack), Num:=IndexOfIndexStack);&#xD;
+	CF_InsertMessageStack:=TRUE;&#xD;
+ELSE&#xD;
+	CF_InsertMessageStack:=FALSE; &#xD;
+END_IF;</Text></StructuredTextModel>

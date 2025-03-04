@@ -1,0 +1,16 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TIME	N=TaskPeriodTime	G=VAR
+++D=LINT	N=TaskPeriodMillis	G=VAR
+++D=DATE_AND_TIME	N=nowDateTime	G=VAR
+++D=LINT	N=nowEpoch	G=VAR
+++D=BOOL	N=Enable	G=VAR
+++D=BOOL	N=SecondPassed	G=VAR
+++D=LINT	N=lastEpoch	G=VAR
+++D=TIME	N=TimeMillis	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=In	Ord=0	G=VAR_INPUT
+++D=BOOL	N=Q	Ord=1	G=VAR_OUTPUT
+++D=LINT	N=Millisecond	Ord=2	G=VAR_OUTPUT	Com=Millisecond passed during this second, based on sytem time
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

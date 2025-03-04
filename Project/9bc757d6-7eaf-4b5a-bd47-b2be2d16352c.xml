@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <ReferredLibrariesModel>
+      <ReferredLibraries>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>OmronLib_MQTT_Comm_V1_0</Name>
+              <NameSpace></NameSpace>
+              <Version>1.0.0</Version>
+              <Revision>1</Revision>
+              <LibraryId>36a560f6-9800-4b9d-a0c0-61d9e168ae3f</LibraryId>
+              <Author>OMRON Corporation</Author>
+              <Company>(c) OMRON Corporation 2021. All Rights Reserved.</Company>
+              <DateCreated>2021-06-03T10:12:03.4246929+02:00</DateCreated>
+              <DateModified>2021-07-06T02:47:43.8980513+02:00</DateModified>
+              <Comment>This is the MQTT communication library.
+これはMQTT通信ライブラリです。</Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>OmronLib\MQTT_Comm\MQTTClient</PublicName>
+                <PublicName>OmronLib\MQTT_Comm\MQTTPubAryByte</PublicName>
+                <PublicName>OmronLib\MQTT_Comm\MQTTPubString</PublicName>
+                <PublicName>OmronLib\MQTT_Comm\MQTTSubAryByte</PublicName>
+                <PublicName>OmronLib\MQTT_Comm\MQTTSubString</PublicName>
+                <PublicName>OmronLib\MQTT_Comm\MQTTPing</PublicName>
+                <PublicName>OmronLib\MQTT_Comm\sClientRcv</PublicName>
+                <PublicName>OmronLib\MQTT_Comm\sClientStatus</PublicName>
+                <PublicName>OmronLib\MQTT_Comm\sClientReference</PublicName>
+                <PublicName>OmronLib\MQTT_Comm\sWillCfg</PublicName>
+                <PublicName>OmronLib\MQTT_Comm\sConnectionSettings</PublicName>
+                <PublicName>OmronLib\MQTT_Comm\sPubFlags</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames>
+                <InternalName>OmronLib\MQTT_Comm\PktPublish</InternalName>
+                <InternalName>OmronLib\MQTT_Comm\PktUnsubscribe</InternalName>
+                <InternalName>OmronLib\MQTT_Comm\PktSubscribe</InternalName>
+                <InternalName>OmronLib\MQTT_Comm\RLDecode</InternalName>
+                <InternalName>OmronLib\MQTT_Comm\RLEncode</InternalName>
+                <InternalName>OmronLib\MQTT_Comm\PktConnect</InternalName>
+                <InternalName>OmronLib\MQTT_Comm\ServerConnect</InternalName>
+                <InternalName>OmronLib\MQTT_Comm\MQTTSend</InternalName>
+                <InternalName>OmronLib\MQTT_Comm\MQTTConnect</InternalName>
+                <InternalName>OmronLib\MQTT_Comm\MQTTDisconnect</InternalName>
+                <InternalName>OmronLib\MQTT_Comm\MQTTRcv</InternalName>
+                <InternalName>OmronLib\MQTT_Comm\sPacketCache</InternalName>
+                <InternalName>OmronLib\MQTT_Comm\sSendQueue</InternalName>
+              </InternalPartsNames>
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NX102-9000</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>46</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.46</DisplayVersion>
+                <Packages>
+                  <Package Name="Motion" Version="1.46" />
+                  <Package Name="OPCUA" Version="1.46" />
+                  <Package Name="SecureSocket" Version="1.46" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>5fc37718-2559-4223-af5d-76ed3eadd16e</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\OMRON\Data\Lib\MQTT_Comm\OmronLib_MQTT_Comm_V1_0.slr</LibraryFilePath>
+              <LibraryFileRelativePath></LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+              <AsOldVer>false</AsOldVer>
+              <SchemaVersion>3</SchemaVersion>
+              <Parameter1>false</Parameter1>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>JSONEncoding</Name>
+              <NameSpace></NameSpace>
+              <Version>0.0.57</Version>
+              <Revision>1</Revision>
+              <LibraryId>29c3c57d-4d26-4adb-a5fb-193d24719ab3</LibraryId>
+              <Author>SGG</Author>
+              <Company>OMRON ATCE</Company>
+              <DateCreated>2016-09-19T14:42:18.866015+02:00</DateCreated>
+              <DateModified>2020-04-20T14:27:56.3308353+02:00</DateModified>
+              <Comment></Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>JSON\JSON_INT</PublicName>
+                <PublicName>JSON\JSON_DINT</PublicName>
+                <PublicName>JSON\JSON_LINT</PublicName>
+                <PublicName>JSON\JSON_UINT</PublicName>
+                <PublicName>JSON\JSON_UDINT</PublicName>
+                <PublicName>JSON\JSON_ULINT</PublicName>
+                <PublicName>JSON\JSON_STRING</PublicName>
+                <PublicName>JSON\JSON_BOOL</PublicName>
+                <PublicName>JSON\JSON_LOGIC</PublicName>
+                <PublicName>JSON\JSON_DATE</PublicName>
+                <PublicName>JSON\JSON_REAL</PublicName>
+                <PublicName>JSON\JSON_LREAL</PublicName>
+                <PublicName>JSON\JSON_formatREAL</PublicName>
+                <PublicName>JSON\JSON_formatLREAL</PublicName>
+                <PublicName>JSON\JSONObj</PublicName>
+                <PublicName>JSON\JSONCloseObj</PublicName>
+                <PublicName>JSON\JSONList</PublicName>
+                <PublicName>JSON\JSONAdd</PublicName>
+                <PublicName>JSON\JSONCloseList</PublicName>
+                <PublicName>JSON\JSONArr</PublicName>
+                <PublicName>JSON\JSONCloseArr</PublicName>
+                <PublicName>JSON\JSONBuild</PublicName>
+                <PublicName>JSON\JSONBuildAsArray</PublicName>
+                <PublicName>JSON\JSONGetStatus</PublicName>
+                <PublicName>JSON\JSONBuffer</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames>
+                <InternalName>JSON\InsertVariable</InternalName>
+                <InternalName>JSON\FindReplace</InternalName>
+                <InternalName>JSON\JSON_WORD</InternalName>
+                <InternalName>JSON\JSON_DWORD</InternalName>
+                <InternalName>JSON\JSON_LWORD</InternalName>
+                <InternalName>JSON\JSONEncoder</InternalName>
+              </InternalPartsNames>
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NJ501-1500</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>18</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.18</DisplayVersion>
+                <Packages>
+                  <Package Name="Motion" Version="1.18" />
+                  <Package Name="OPCUA" Version="1.18" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>8173faf6-9ba0-46aa-adad-c9097bc8c63f</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\Users\Federico\Documents\FEDERICO\Software\PLC\OMRON\MQTTs\JSON Encoding and Decoding Library\JSONEncoding.slr</LibraryFilePath>
+              <LibraryFileRelativePath>Documents\FEDERICO\Software\PLC\OMRON\MQTTs\JSON Encoding and Decoding Library\JSONEncoding.slr</LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+              <AsOldVer>false</AsOldVer>
+              <SchemaVersion>3</SchemaVersion>
+              <Parameter1>false</Parameter1>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+      </ReferredLibraries>
+      <BuildOption>
+        <data>
+          <LibraryModel>
+            <Name>CF_SafeMqttCom</Name>
+            <NameSpace></NameSpace>
+            <Version>1.0.1</Version>
+            <Revision>1</Revision>
+            <LibraryId>c011387e-ce61-4a6e-bfb5-12c00f922f17</LibraryId>
+            <Author>Federico Galvagni</Author>
+            <Company>CF Elettroautomazioni</Company>
+            <DateCreated>2024-09-04T11:13:05.6827866+02:00</DateCreated>
+            <DateModified>2025-03-04T08:58:03.4871517+01:00</DateModified>
+            <Comment>Enabled source display</Comment>
+            <Password></Password>
+            <AttachedFiles />
+            <AttachedFilesRelativePaths />
+            <PublicPartsNames />
+            <InternalPartsNames />
+            <BuildDevice>
+              <Category>Controller</Category>
+              <Family>Nex</Family>
+              <FullModel>NX1P2-1040DT1</FullModel>
+              <MajorVersion>1</MajorVersion>
+              <MinorVersion>50</MinorVersion>
+              <Revision>0</Revision>
+              <DisplayVersion>1.50</DisplayVersion>
+              <Packages>
+                <Package Name="Motion" Version="1.50" />
+                <Package Name="SecureSocket" Version="1.50" />
+              </Packages>
+            </BuildDevice>
+            <DependencyId>ae617f70-bf04-49e8-83a3-71f30f4ead57</DependencyId>
+            <IsSource>true</IsSource>
+            <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+            <IsIncludeReferredLibraries>true</IsIncludeReferredLibraries>
+            <LibraryFilePath></LibraryFilePath>
+            <LibraryFileRelativePath></LibraryFileRelativePath>
+            <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+            <AsOldVer>false</AsOldVer>
+            <SchemaVersion>3</SchemaVersion>
+            <Parameter1>false</Parameter1>
+            <ApplicationProductVersion>1.61.0.64007</ApplicationProductVersion>
+          </LibraryModel>
+        </data>
+      </BuildOption>
+      <ExcludedParts>
+        <ExcludedPart>0754cf68-f56f-40fc-978e-4d1af8d4b062</ExcludedPart>
+        <ExcludedPart>b990658b-7f23-458c-a4bd-417f87f52c17</ExcludedPart>
+      </ExcludedParts>
+      <InternalParts />
+      <LibraryTrackingIdConversionTable>
+        <LibraryEntityTrackingId>287b5395-b78c-4a96-8bc8-b5f93f61d48b</LibraryEntityTrackingId>
+        <PartTrackingIds>
+          <ConversionItem Id="72f91046-fe0f-4c43-9aec-5ed5d75d82de" NewId="d3342454-99d2-43d6-9649-89367a44d44d" />
+          <ConversionItem Id="69db92b4-e489-4469-80ce-99df3e46f3b8" NewId="18318dbe-2b09-4b4f-8c39-640ee1b3e6bd" />
+          <ConversionItem Id="0754cf68-f56f-40fc-978e-4d1af8d4b062" NewId="40b09d02-f5c7-45a5-b97e-fa5fcab8645a" />
+          <ConversionItem Id="01688c0e-da5e-4df3-a4f8-1db1f8f3d02a" NewId="433cf9f7-c1b4-40fa-876f-cb9a4c8a6688" />
+          <ConversionItem Id="0cce3a4a-0264-47b4-beaa-2d2028754a17" NewId="3b4ed6e6-4b89-4e5e-bd50-0e1d6fbadcf1" />
+          <ConversionItem Id="e9514a13-1d94-4a77-b416-e0c79d5ef109" NewId="b21cf436-cb14-4f6c-89e5-feda6bb279a1" />
+          <ConversionItem Id="b990658b-7f23-458c-a4bd-417f87f52c17" NewId="9c1c84f1-907f-4090-aa11-da9c6a05e25e" />
+          <ConversionItem Id="ec8a6889-3aec-4423-9a9c-67cc1ba2dbf2" NewId="ddd29db7-4741-46b5-87c6-6d29e2731203" />
+          <ConversionItem Id="121553ec-b9a8-4743-b0b7-7eb6020b867f" NewId="e17615cc-9e04-4ff4-9ccd-50e8af12cbe1" />
+          <ConversionItem Id="5d6be9fa-2b9e-4fbe-9143-8d75ad414c86" NewId="30517171-d176-4a90-b7cc-0cee799d54ee" />
+          <ConversionItem Id="3bf5228b-62e9-42cd-9879-6dcbd11863bf" NewId="61d9ccab-20eb-493b-a8b3-0adc31b9eb90" />
+          <ConversionItem Id="7e84e4c5-0fba-47b8-8728-af371bbef4b5" NewId="0c4ea44c-1f38-4037-9f63-fe4a94654908" />
+          <ConversionItem Id="151ecc39-233a-4c5e-ba16-5a3cd6543c01" NewId="607b2ef8-7128-4e6a-8d88-0fa380e4abb8" />
+          <ConversionItem Id="4639e1d3-68af-4287-86a2-354342fdcffb" NewId="8f76d0d4-1758-4914-8351-c988c2a6e006" />
+          <ConversionItem Id="bb69688c-3ba4-47b9-af36-10578677c038" NewId="69cf0663-a452-4da4-bd8e-53412304b734" />
+          <ConversionItem Id="ed040b8c-e8ac-4dd3-bd0f-957d53f2ba6d" NewId="a7c56415-217c-47c7-bcba-f38779bd98a7" />
+          <ConversionItem Id="8a23d067-4660-4e87-b21e-872a0194c470" NewId="1e9aed4d-eb50-463f-8b45-7e27870ee884" />
+          <ConversionItem Id="03087b7f-b45a-4c78-933e-eaf147ed3f04" NewId="c9f23ed1-3bed-4c34-8a56-64e55a995ddd" />
+          <ConversionItem Id="34f53965-efab-43b8-bba0-07da2fffedf2" NewId="1aad1c12-937c-4084-911b-277f95b81b72" />
+          <ConversionItem Id="f3ba7c44-2d82-4de5-9c41-90d17ee8f761" NewId="6e60e6cc-9efd-42ac-8d2a-8fbef01e6b0c" />
+          <ConversionItem Id="eea7cf9a-37d7-4be5-bc36-e7049f2b461a" NewId="5687f5df-1d60-4d7f-81d4-2f10c6361aa5" />
+          <ConversionItem Id="f925c4e3-462f-47b7-bfd1-1b03d7146154" NewId="94935cc0-20c7-4ce3-b312-fac9992992eb" />
+          <ConversionItem Id="83d3517d-8dc9-4e13-adff-24b4814dca0f" NewId="523198f9-8149-4bc4-a363-68b22a1c485d" />
+          <ConversionItem Id="b5344cd1-67d5-45eb-8d9e-0db1a972f978" NewId="f0a2ee4d-b7d7-404e-b275-39bd433fd4a3" />
+          <ConversionItem Id="5ac54b81-16e4-4052-b94b-c2fa53f4edaf" NewId="164bbfaa-6d73-4649-9487-4356ad7dee06" />
+          <ConversionItem Id="7676605f-5946-42aa-9720-16dc318f3fa6" NewId="bb9f5e92-9b6e-4732-b825-6a6cfc7fa4cc" />
+          <ConversionItem Id="d32bf619-8344-4df2-b32c-1e35b1ff3e15" NewId="ae8ed1e3-9382-4189-b57f-17bcebb089ec" />
+          <ConversionItem Id="9a521438-ac47-4c1b-96e2-b1601e0e2070" NewId="afcb0f18-2726-4d67-8e63-348363b89ffb" />
+          <ConversionItem Id="76826606-9c68-4adc-b5c2-315bafc55aec" NewId="023269ad-b29f-4e40-ba57-bcf67ec2a27d" />
+          <ConversionItem Id="a1f50c36-bf3e-4b61-a72f-dd4343fa43c2" NewId="2066fa1e-df82-4bd1-90fc-116e0b76ff50" />
+          <ConversionItem Id="b8472d2d-8987-4507-9fbf-166bab4987e0" NewId="10593d95-e1ce-4090-9627-792f63e82861" />
+          <ConversionItem Id="1042fa95-0a7c-4e64-a6f5-0356b924f4c3" NewId="643731e4-af23-45ac-a634-653b5ae17b96" />
+          <ConversionItem Id="b049e348-db3c-48c0-b419-6ce1345dd4b3" NewId="7ccb56f8-0ee7-4685-bd90-7ce76a4fc7ca" />
+          <ConversionItem Id="3be5bf64-a759-48ed-81c5-9f8df0eac817" NewId="edec128f-3e55-4750-a730-1b5ad5fe733c" />
+          <ConversionItem Id="64a1da07-c6a6-4c83-bf1c-7d6af766fc7c" NewId="c40c3279-ebb8-4093-a339-f7c6ae01f9dd" />
+          <ConversionItem Id="c7da2496-102b-4ccb-9cde-b5d1d0cca1b1" NewId="5f2266d4-9bca-49b3-ada1-904d8f97fd38" />
+          <ConversionItem Id="040a91f0-961c-46fc-bbc6-6ffd9b09f82d" NewId="66a49d31-cbf3-41b5-b18d-058af673d892" />
+          <ConversionItem Id="61730874-ca65-493f-837b-87ffba50c233" NewId="3bb5038f-f02c-4751-bad2-56dc0b9fd1cb" />
+          <ConversionItem Id="127ab11a-2a8e-4f8b-bd45-1c3d90c5df0c" NewId="94f65548-33b0-4803-909c-ab4a6d2afaaf" />
+          <ConversionItem Id="29186501-6661-4b39-8888-4f9d82fc1a56" NewId="3eb8420b-6f53-42cb-a196-966529fbdbd5" />
+          <ConversionItem Id="d46388ca-492c-418f-8c07-2f7471828c78" NewId="89edd490-369e-4d87-ae8e-4de239b5f97e" />
+          <ConversionItem Id="9842602a-f6a4-4a00-a51b-3089bec2c675" NewId="fdaaa180-6b42-4bf5-be9b-e01d0d08a6be" />
+          <ConversionItem Id="ebba07c4-0657-4976-baa6-5f0b819b7c00" NewId="702ba994-e5e3-4df5-a21e-b556b8cf9119" />
+          <ConversionItem Id="88ed8f12-85f0-46f7-bae8-b38cfb376a19" NewId="4a230fc2-4bd8-43c1-b1e4-ee01eee53fde" />
+          <ConversionItem Id="7473d4f8-8b8b-4f6b-b8b8-2b9a380d03f9" NewId="d67b416a-c3cc-4d6f-b6b8-bd6008a74c51" />
+          <ConversionItem Id="8585c71b-aab0-4c99-b170-5f07d1a9f718" NewId="85607b26-1be3-4418-b7d0-f07857df6d19" />
+          <ConversionItem Id="6c9a4bc5-1e8b-451e-ab9d-74ef7870d0b3" NewId="39bf8a8a-8419-40fc-8395-dbbced546b1d" />
+          <ConversionItem Id="61220ac8-24fe-412f-91b7-92933c1c001e" NewId="3a06c8c8-6dca-4cc4-967f-ee45b51dc4e0" />
+          <ConversionItem Id="b26eff1b-7348-4003-ab74-f1d3fd2bcb0a" NewId="4d21379e-7e86-45f6-a64d-050b83d4f901" />
+          <ConversionItem Id="4bbc1969-7d9d-4830-9317-7c8e18ad71eb" NewId="558246fe-033f-4cb1-b83c-6b80b106725c" />
+          <ConversionItem Id="a272eb26-7ea1-4ebe-a367-2d44101aad64" NewId="8d20de45-0310-473c-aec3-b92e4ed20246" />
+          <ConversionItem Id="df7c8a26-df9b-44f8-ba8d-e6bd2a284f40" NewId="04c64099-3635-4469-8d3d-c882858d348a" />
+        </PartTrackingIds>
+      </LibraryTrackingIdConversionTable>
+      <AreLibrariesIncluded>true</AreLibrariesIncluded>
+      <IsLibraryIdsDifferenceNotified>false</IsLibraryIdsDifferenceNotified>
+    </ReferredLibrariesModel>
+  </data>
+</data>

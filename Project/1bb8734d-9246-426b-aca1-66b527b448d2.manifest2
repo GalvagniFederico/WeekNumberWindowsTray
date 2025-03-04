@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest manifestSchemaVersion="1" modelSchemaVersion="1">
+  <Application applicationName="sysmac" applicationVersion="Infinity" />
+  <Solution solutionName="ComunicazioneSafeMqtt" id="1bb8734d-9246-426b-aca1-66b527b448d2" trackingId="c9bddb22-13a6-46b4-ada6-1f0a8047c022" solutionSchemaVersion="2">
+    <ApplicationFeatures>
+      <ApplicationFeature name="V102Project" />
+      <ApplicationFeature name="SetUnit NX1P2-1040DT1 Ver. 1.50" />
+      <ApplicationFeature name="NexLibraryInternalUsed" />
+      <ApplicationFeature name="TransferInfoAndBuildResultsEntitiesReduced" />
+    </ApplicationFeatures>
+  </Solution>
+</Manifest>

@@ -1,0 +1,14 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=BOOL	N=Error	Ord=1	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=2	G=VAR_OUTPUT
+++D=UINT	N=Stages	Ord=3	G=VAR_OUTPUT
+++D=UINT	N=MessageSize	Ord=4	G=VAR_OUTPUT
+++D=UINT	N=BufferLimit	Ord=5	G=VAR_OUTPUT
+++D=JSON\JSONBuffer	N=Buffer	Ord=6	G=VAR_IN_OUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=JSONGetStatus	G=RETURN

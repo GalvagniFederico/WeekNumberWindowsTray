@@ -1,0 +1,36 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=CF_SecureMqtt	N=CF_Alarms_com_inst	G=VAR
+++D=Rand	N=Rand_inst	G=VAR
+++D=UINT	N=rndIndex	G=VAR
+++D=LREAL	N=real_rndIndex	G=VAR
+++D=BOOL	N=ClearBuffer	G=VAR
+++D=BOOL	N=push	G=VAR
+++D=BOOL	N=CF_Alarms_com_Error	G=VAR
+++D=INT	N=CF_Alarms_com_ErrorCode	G=VAR
+++D=CF_GetMs	N=CF_GetMs_inst	G=VAR
+++D=BOOL	N=pushResult	G=VAR
+++D=BOOL	N=off	G=VAR
+++D=UINT	N=Size	G=VAR
+++D=TIME	N=TEST	G=VAR
+++D=LREAL	N=RndID_lreal	G=VAR
+++D=LREAL	N=Rnd_real	G=VAR
+++D=UDINT	N=RndID_udint	G=VAR
+++D=BOOL	N=TestDuplicate	G=VAR
+++D=BOOL	N=operate	G=VAR
+++D=INT	N=stage	G=VAR
+++D=LINT	N=bo	G=VAR
+++D=LINT	N=tempoMs	G=VAR
+++D=STRING[256]	N=tempoString	G=VAR
+++D=REAL	N=tempoAttuale	G=VAR
+++D=REAL	N=tempoMsString	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=LREAL	N=Rnd_Number	G=VAR_EXTERNAL
+++D=ARRAY[0..12] OF MQTT_Message	N=gMqttMessage_Stack	G=VAR_EXTERNAL
+++D=BOOL	N=CMod	G=VAR_EXTERNAL
+++D=BOOL	N=SMod	G=VAR_EXTERNAL
+++D=ARRAY[0..12] OF SINT	N=gMqttIndexStack	G=VAR_EXTERNAL
+++D=UINT	N=gMqttIndexStack_Index	G=VAR_EXTERNAL
+++D=LINT	N=gTIME_Milliseconds	G=VAR_EXTERNAL
+++D=ULINT	N=data	G=VAR_EXTERNAL

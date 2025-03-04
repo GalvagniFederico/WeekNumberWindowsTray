@@ -1,0 +1,15 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
+++D=ARRAY[0..12] OF MQTT_Message	N=gMqttMessage_Stack	R=1	G=VAR_GLOBAL
+++D=ARRAY[0..12] OF SINT	N=gMqttIndexStack	R=1	G=VAR_GLOBAL
+++D=UINT	N=gMqttIndexStack_Index	R=1	G=VAR_GLOBAL
+++D=LREAL	N=Rnd_Number	G=VAR_GLOBAL
+++D=BOOL	N=CMod	G=VAR_GLOBAL
+++D=BOOL	N=SMod	G=VAR_GLOBAL
+++D=ARRAY[0..49] OF LINT	N=tempoInvio	G=VAR_GLOBAL
+++D=ARRAY[0..49] OF LINT	N=tempoRicezione	G=VAR_GLOBAL
+++D=TIME	N=ElapsedTime	G=VAR_GLOBAL
+++D=BOOL	N=gTIME_SYNCHRONIZED	G=VAR_GLOBAL
+++D=LINT	N=gTIME_Milliseconds	G=VAR_GLOBAL
+++D=ULINT	N=data	R=1	G=VAR_GLOBAL

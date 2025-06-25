@@ -14,3 +14,4 @@ C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon
 C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\bin\Debug\WeekNumberTrayIcon.xml
 C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\obj\Debug\WeekNumberTrayIcon.exe.manifest
 C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\obj\Debug\WeekNumberTrayIcon.application
+C:\Users\Federico\Documents\FEDERICO\Other\WeekNumberTray\Net\WeekNumberTrayIcon\WeekNumberTrayIcon\obj\Debug\WeekNumberTrayIcon.exe.config

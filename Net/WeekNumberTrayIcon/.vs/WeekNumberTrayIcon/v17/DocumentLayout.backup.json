@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,6 +35,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Document",
@@ -58,7 +62,8 @@
               "RelativeToolTip": "WeekNumberTrayIcon\\Form1.Designer.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-24T11:11:52.582Z"
+              "WhenOpened": "2024-10-24T11:11:52.582Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -80,7 +85,7 @@
               "RelativeDocumentMoniker": "WeekNumberTrayIcon\\Form1.vb",
               "ToolTip": "C:\\Users\\Federico\\Documents\\FEDERICO\\Other\\WeekNumberTray\\Net\\WeekNumberTrayIcon\\WeekNumberTrayIcon\\Form1.vb",
               "RelativeToolTip": "WeekNumberTrayIcon\\Form1.vb",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAcwFsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAcwG4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-10-24T11:09:58.714Z",
               "EditorCaption": ""

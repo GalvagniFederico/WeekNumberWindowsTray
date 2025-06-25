@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeekNumberTrayIcon.exe" size="20992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeekNumberTrayIcon.exe" size="23040">
       <assemblyIdentity name="WeekNumberTrayIcon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PhP6GNjXExiC9kVVGVGUwoU5s7m6dgl8FIhn7B49X+M=</dsig:DigestValue>
+        <dsig:DigestValue>4IgQjJYB4Lc1b22TekXde2ZrmQAIJC5hdunKUdaZBRk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

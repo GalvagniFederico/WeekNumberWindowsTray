@@ -173,6 +173,7 @@ Public Class Form1
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         CloseHandle(timerHandle)
         RemoveHandler SystemEvents.TimeChanged, AddressOf OnTimeChanged
+        RemoveHandler SystemEvents.UserPreferenceChanged, AddressOf SystemEvents_UserPreferenceChanged
     End Sub
 
     Private Sub OnTimeChanged()

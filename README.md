@@ -47,15 +47,12 @@
 
 ## Usage
 
-- Once the application starts, it will minimize to the system tray.
-- Right-click the tray icon to access options for changing the font size, text color, or to exit the application.
 
-### Optional
-Add the application to the startup folder so you don't have to start it manually. To do that follow the next step:
-1. Search WeekNumberTrayIcon in Windows Start Menu, right click the application and select Open file location
-2. Now you should see an application reference, copy that file.
-3. Execute ⊞ + R (Windows key + R) combination in the windows type in shell:startup
-4. Paste there the application reference
+- Once the application starts, it will minimize to the system tray.
+- Right-click the tray icon to access options for changing the font size, text color, enable or disable autostart, or to exit the application.
+
+### Startup
+The installer automatically adds **WeekNumberTrayIcon** to the Windows Startup folder so it runs on login. You can toggle this behaviour from the tray icon menu by checking or unchecking **Launch at Startup**.
 
 
 Allow **WeekNumberTrayIcon** to be shown in the tray bar, if you don't follow this step the icon will be hidden by default

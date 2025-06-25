@@ -97,8 +97,17 @@ Public Class Form1
             Dim iconHandle As IntPtr = bmp.GetHicon()
             Dim weekIcon As Icon = Icon.FromHandle(iconHandle)
 
+            ' Dispose of any previous icon to avoid handle leaks
+            If notifyIconWeekNumber.Icon IsNot Nothing Then
+                notifyIconWeekNumber.Icon.Dispose()
+            End If
+
             ' Update NotifyIcon with the new icon
-            notifyIconWeekNumber.Icon = weekIcon
+            notifyIconWeekNumber.Icon = CType(weekIcon.Clone(), Icon)
+
+            ' Clean up unmanaged icon handle
+            DestroyIcon(iconHandle)
+            weekIcon.Dispose()
         End Using
     End Sub
 
@@ -195,6 +204,10 @@ Public Class Form1
 
     <DllImport("kernel32.dll", SetLastError:=True)>
     Private Shared Function CloseHandle(hObject As IntPtr) As Boolean
+    End Function
+
+    <DllImport("user32.dll", SetLastError:=True)>
+    Private Shared Function DestroyIcon(hIcon As IntPtr) As Boolean
     End Function
 
     Private Sub SetMidnightTimer()

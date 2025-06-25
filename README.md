@@ -36,7 +36,7 @@ A simple Windows tray application that displays the current week number in the s
 2. Open the solution in Visual Studio.
 3. Build and run the project.
 
-### Method 2: install using the prebuild installer
+### Method 2: install using the prebuilt installer
 1. Clone the repository:
    ```
    git clone https://github.com/yourusername/WeekNumberWindowsTray.git
@@ -57,9 +57,9 @@ Add the application to the startup folder so you don't have to start it manually
 3. Execute ⊞ + R (Windows key + R) combination in the windows type in shell:startup
 4. Paste there the application reference
 
-Allow WeekTrayNumber to be shown in the tray bar, if you dont follow this step the icon well be hidden by default
+Allow WeekNumberTrayIcon to be shown in the tray bar, if you don't follow this step the icon will be hidden by default
 1. Right click on the task bar and select Taskbar settings
-2. Now navigate to Other sytem tray icons
+2. Now navigate to Other system tray icons
 3. Find WeekNumberTrayIcon and enable it
 
 ## License

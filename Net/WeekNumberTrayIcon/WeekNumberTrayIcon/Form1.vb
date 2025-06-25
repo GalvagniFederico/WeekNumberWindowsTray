@@ -5,6 +5,7 @@ Imports System.Threading
 Imports Microsoft.Win32
 Imports Microsoft.Win32.SafeHandles
 Imports System.IO
+Imports System.Reflection
 
 Public Class Form1
 
@@ -14,11 +15,19 @@ Public Class Form1
     Private selectedFontSize As Integer = 46
     Private selectedTextColor As Color = Color.White
     Private useSystemThemeColor As Boolean = False
+    Private launchAtStartup As Boolean = True
+    Private startupMenuItem As ToolStripMenuItem
     Private settingsFilePath As String = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "WeekNumberSettings.txt")
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Load settings from file
         LoadSettings()
+
+        If launchAtStartup Then
+            AddToStartup()
+        Else
+            RemoveFromStartup()
+        End If
 
         ' Set NotifyIcon properties
         notifyIconWeekNumber.Icon = SystemIcons.Application ' Temporary icon until we generate the week number icon
@@ -132,6 +141,13 @@ Public Class Form1
         textColorMenuItem.DropDownItems.Add("Skyblue", CreateColorImage(Color.SkyBlue), Sub() SetTextColor(Color.SkyBlue, False))
         contextMenu.Items.Add(textColorMenuItem)
 
+        ' Startup option
+        startupMenuItem = New ToolStripMenuItem("Launch at Startup")
+        startupMenuItem.CheckOnClick = True
+        startupMenuItem.Checked = launchAtStartup
+        AddHandler startupMenuItem.CheckedChanged, AddressOf StartupMenuItem_CheckedChanged
+        contextMenu.Items.Add(startupMenuItem)
+
         ' Exit menu
         Dim exitMenuItem As New ToolStripMenuItem("Exit", Nothing, AddressOf ExitMenuItem_Click)
         contextMenu.Items.Add(exitMenuItem)
@@ -168,6 +184,16 @@ Public Class Form1
         ' Clean up and exit the application
         notifyIconWeekNumber.Visible = False
         Application.Exit()
+    End Sub
+
+    Private Sub StartupMenuItem_CheckedChanged(sender As Object, e As EventArgs)
+        launchAtStartup = startupMenuItem.Checked
+        If launchAtStartup Then
+            AddToStartup()
+        Else
+            RemoveFromStartup()
+        End If
+        SaveSettings()
     End Sub
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
@@ -252,6 +278,7 @@ Public Class Form1
             Using writer As New StreamWriter(settingsFilePath, False)
                 writer.WriteLine(selectedFontSize.ToString())
                 writer.WriteLine(If(useSystemThemeColor, "SystemTheme", selectedTextColor.ToArgb().ToString()))
+                writer.WriteLine(launchAtStartup.ToString())
             End Using
         Catch ex As Exception
             Console.WriteLine("Failed to save settings: " & ex.Message)
@@ -270,6 +297,10 @@ Public Class Form1
                         useSystemThemeColor = False
                         selectedTextColor = Color.FromArgb(Integer.Parse(colorValue))
                     End If
+                    Dim startupValue As String = reader.ReadLine()
+                    If Not String.IsNullOrEmpty(startupValue) Then
+                        Boolean.TryParse(startupValue, launchAtStartup)
+                    End If
                 End Using
             End If
         Catch ex As Exception
@@ -277,6 +308,38 @@ Public Class Form1
             selectedTextColor = GetSystemThemeColor()
             SaveSettings()
             Console.WriteLine("Failed to load settings: " & ex.Message)
+        End Try
+    End Sub
+
+    Private Function GetStartupShortcutPath() As String
+        Dim startupFolder As String = Environment.GetFolderPath(Environment.SpecialFolder.Startup)
+        Dim exeName As String = Path.GetFileNameWithoutExtension(Assembly.GetExecutingAssembly().Location)
+        Return Path.Combine(startupFolder, exeName & ".lnk")
+    End Function
+
+    Private Sub AddToStartup()
+        Try
+            Dim shortcutPath As String = GetStartupShortcutPath()
+            If Not File.Exists(shortcutPath) Then
+                Dim shell = CreateObject("WScript.Shell")
+                Dim shortcut = shell.CreateShortcut(shortcutPath)
+                shortcut.TargetPath = Assembly.GetExecutingAssembly().Location
+                shortcut.WorkingDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)
+                shortcut.Save()
+            End If
+        Catch ex As Exception
+            Console.WriteLine("Failed to create startup shortcut: " & ex.Message)
+        End Try
+    End Sub
+
+    Private Sub RemoveFromStartup()
+        Try
+            Dim shortcutPath As String = GetStartupShortcutPath()
+            If File.Exists(shortcutPath) Then
+                File.Delete(shortcutPath)
+            End If
+        Catch ex As Exception
+            Console.WriteLine("Failed to remove startup shortcut: " & ex.Message)
         End Try
     End Sub
 

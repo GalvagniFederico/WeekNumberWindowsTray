@@ -106,7 +106,7 @@ Public Class Form1
             Dim iconHandle As IntPtr = bmp.GetHicon()
             Dim weekIcon As Icon = Icon.FromHandle(iconHandle)
 
-            ' Dispose of any previous icon to avoid handle leaks
+            ' Dispose of any previous icon to avoid handle leaks 
             If notifyIconWeekNumber.Icon IsNot Nothing Then
                 notifyIconWeekNumber.Icon.Dispose()
             End If
